@@ -5,7 +5,7 @@ import styles from './styles.css';
 import { Button } from '@material-ui/core'
 import { Input } from '@material-ui/core'
 
-const Header = () => {
+const Login = () => {
     return(
         <div className="body">
             <img src={logo} />
@@ -36,4 +36,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Login;
