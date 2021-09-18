@@ -5,12 +5,16 @@ import {
     Home,
     Contact,
     Login,
-    Register
+    Register,
+    Section
 } from '../pages'
 
 export default function Routes() {
     return (
         <Switch>
+            <Route path="/section">
+                <Section />
+            </Route>
             <Route path="/register">
                 <Register />
             </Route>
