@@ -22,7 +22,7 @@ export function Login() {
       bg={useColorModeValue('gray.50', 'gray.800')}>
       <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
         <Stack align={'center'}>
-          <Heading fontSize={'4xl'}>Inicia con tu cuenta</Heading>
+          <Heading fontSize={'4xl'}>¡Inicia sesión!</Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
             Para disfrutar <Link color={'blue.400'}> día a día</Link> ✌️
           </Text>
@@ -34,20 +34,23 @@ export function Login() {
           p={8}>
           <Stack spacing={4}>
             <FormControl id="email">
-              <FormLabel>Email address</FormLabel>
+              <FormLabel>Correo Electrónico / Usuario</FormLabel>
               <Input type="email" />
             </FormControl>
             <FormControl id="password">
-              <FormLabel>Password</FormLabel>
+              <FormLabel>Contraseña</FormLabel>
               <Input type="password" />
             </FormControl>
             <Stack spacing={10}>
               <Stack
-                direction={{ base: 'column', sm: 'row' }}
-                align={'start'}
+                direction={{ base: 'column', sm: 'column' }}
+                align={'center'}
                 justify={'space-between'}>
+                border={2}
                 <Checkbox>Recordar contraseña</Checkbox>
                 <Link color={'blue.400'}>Olvidaste tu contraseña?</Link>
+                <Text>¡¿Todavía no tienes una cuenta?!</Text>
+                <Link color={'blue.400'}>Registrate</Link>
               </Stack>
               <Button
                 bg={'blue.400'}
@@ -55,7 +58,7 @@ export function Login() {
                 _hover={{
                   bg: 'blue.500',
                 }}>
-                  Submit
+                  Iniciar
               </Button>
             </Stack>
           </Stack>
