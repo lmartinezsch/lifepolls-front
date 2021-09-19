@@ -6,7 +6,7 @@ import {
     Contact,
     Login,
     Register,
-    Section
+    Section,
 } from '../pages'
 
 export default function Routes() {
